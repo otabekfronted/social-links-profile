@@ -1,0 +1,119 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 2px dotted #c4f82a;
+    outline-offset: 4px;
+}
+img {
+    object-fit: cover;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+h1 {
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 24px;
+}
+.user-card {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 12px;
+}
+.user-card__image {
+    border-radius: 50%;
+}
+.user-card__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.user-card__location {
+    font-weight: 700;
+    a {
+        color: #c4f82a;
+    }
+}
+.user-card__job {
+    text-align: center;
+    font-weight: 400;
+}
+.user-card__social {
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+}
+.user-card__social-link {
+    color: #fff;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #333;
+    border-radius: 8px;
+    &:active {
+        opacity: 0.8;
+    }
+    &:hover {
+        background-color: #c4f82a;
+        color: #333;
+    }
+}
+@media (max-width: 375px) {
+    .user-card {
+        padding: 24px;
+    }
+}
